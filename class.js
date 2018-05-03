@@ -1,33 +1,33 @@
 class Dog {
-  constructor (bemenet1, bemenet2, bemenet3) {
-    this.fajtaProperty = bemenet1;
-    this.kor = bemenet2;
-    this.nem = bemenet3;
+  constructor (input1, input2, input3) {
+    this.breedProperty = input1;
+    this.age = input2;
+    this.sex = input3;
   }
 
   getBreed () {
-    return this.fajtaProperty;
+    return this.breedProperty;
   }
 
-  varhatoEletkor () {
-    if (this.nem === 1) {
-      return 50 - this.kor;
+  estimatedLifeAge () {
+    if (this.sex === 1) {
+      return 50 - this.age;
     } else {
-      return 100 - this.kor;
+      return 100 - this.age;
     }
   }
 
-  harmadikMetodus (bemenetAMethodusnak) {
-    console.log(bemenetAMethodusnak);
+  thirdMethod (inputToMethod) {
+    console.log(inputToMethod);
   }
 }
 
-var peldany = new Dog('boxer', 20, 2);
-console.log(peldany.getBreed());
-console.log(peldany.varhatoEletkor());
-console.log(peldany.harmadikMetodus('ilyet is tudok csinálni'));
+var specimen = new Dog('Boxer', 20, 2);
+console.log(specimen.getBreed());
+console.log(specimen.estimatedLifeAge());
+console.log(specimen.thirdMethod('I can do something like this'));
 
-var peldany2 = new Dog('puli', 15, 1);
-console.log(peldany2.getBreed());
-console.log(peldany2.varhatoEletkor());
-console.log(peldany2.harmadikMetodus('ez nem semmi'));
+var specimen2 = new Dog('Puli', 15, 1);
+console.log(specimen2.getBreed());
+console.log(specimen2.estimatedLifeAge());
+console.log(specimen2.thirdMethod('This is quite good'));

@@ -47,7 +47,9 @@ console.log(cond(9, 5, '>'));
 console.log(cond(9, 5, '<')); */
 
 // 3. feladat:
-/* 
+
+/*
+
 let aArray = [3, 5, 6, 7];
 let bArray = [6, 2, 4, 9];
 
@@ -178,11 +180,11 @@ createTable('Bálint');
 createTable('Róbert');
 createTable('Hedvig');
 createTable('Paulina');
-put('Bálint', 'szemszín', 'barna');
-put('Róbert', 'kezek', 2);
-put('Hedvig', 'szemszín', 'kék');
-put('Hedvig', 'kezek', 3);
-put('Paulina', 'intelligencia', 120);
-put('Paulina', 'hajszín', 'vörös');
+put('Bálint', 'color of eyes', 'brown');
+put('Róbert', 'number of hands', 2);
+put('Hedvig', 'color of eyeszín', 'blue');
+put('Hedvig', 'number of hands', 3);
+put('Paulina', 'intelligence', 120);
+put('Paulina', 'color of hair', 'red');
 menu();
 console.log(database);

@@ -1,23 +1,23 @@
-var kenderesi = ['Kenderesi Milós', 'Szeged', '1956.január 13.', '162-534-624'];
-var pataki = ['Pataki Zsófia', 'Palics', '1932.március 23.', '122-534-624'];
-var kerpenizsan = ['Kerpenizsán Attila', 'Belgrád', '1977.február 3.', '172-534-624'];
+var kenderesi = ['Kenderesi Milós', 'Szeged', '1956.01.13.', '162-534-624'];
+var pataki = ['Pataki Zsófia', 'Palics', '1932.03.23.', '122-534-624'];
+var kerpenizsan = ['Kerpenizsán Attila', 'Belgrade', '1977.02.03.', '172-534-624'];
 
-function getNeve (tomb) {
-  return tomb[0];
+function getName (array) {
+  return array[0];
 }
 
-function getSzulAdatok (tomb) {
-  return tomb[1] + ', ' + tomb[2];
+function getDateOfBirth (array) {
+  return array[1] + ', ' + array[2];
 }
 
-function getTaj (tomb) {
-  return tomb[3];
+function getSSN (array) {
+  return array[3];
 }
 
-function write (tomb) {
-  console.log(getNeve(tomb));
-  console.log(getSzulAdatok(tomb));
-  console.log(getTaj(tomb));
+function write (array) {
+  console.log(getName(array));
+  console.log(getDateOfBirth(array));
+  console.log(getSSN(array));
 }
 
 write(kenderesi);

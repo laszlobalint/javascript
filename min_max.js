@@ -1,19 +1,19 @@
-let tomb = [4, 66, 23, 666, 1234, 2, 76];
-let max = tomb[0];
-let min = tomb[0];
+let array = [4, 66, 23, 666, 1234, 2, 76];
+let max = array[0];
+let min = array[0];
 let i = 0;
 
-for (i = 0; i < tomb.length; i++) {
-  if (tomb[i] > max) {
-    max = tomb[i];
+for (i = 0; i < array.length; i++) {
+  if (array[i] > max) {
+    max = array[i];
   }
 }
 
-for (i = 0; i < tomb.length; i++) {
-  if (tomb[i] < min) {
-    min = tomb[i];
+for (i = 0; i < array.length; i++) {
+  if (array[i] < min) {
+    min = array[i];
   }
 }
 
-console.log('A tömb legnagyobb értéke: ', max);
-console.log('A tömb legkisebb értéke: ', min);
+console.log('Highest value in the array: ', max);
+console.log('Lowest value in the array: ', min);

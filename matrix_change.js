@@ -11,38 +11,38 @@ function matrixGenerate (a, b, char) {
   return matrix;
 }
 
-function matrixChange (tomb, i, j, char) {
-  tomb[i][j] = char;
-  return tomb;
+function matrixChange (array, i, j, char) {
+  array[i][j] = char;
+  return array;
 }
 
-function print (tomb) {
-  for (let i = 0; i < tomb.length; i++) {
+function print (array) {
+  for (let i = 0; i < array.length; i++) {
     var row = '';
-    for (let j = 0; j < tomb[i].length; j++) {
-      row += tomb[i][j] + ' ';
+    for (let j = 0; j < array[i].length; j++) {
+      row += array[i][j] + ' ';
     }
     console.log(row);
   }
 }
 
-var tomb = matrixGenerate(10, 10, ' ');
-matrixChange(tomb, 9, 5, '_');
-matrixChange(tomb, 9, 4, 'L');
-matrixChange(tomb, 9, 6, '/');
-matrixChange(tomb, 8, 3, 'L');
-matrixChange(tomb, 8, 7, '/');
-matrixChange(tomb, 7, 2, '|');
-matrixChange(tomb, 7, 8, '|');
-matrixChange(tomb, 6, 3, 'L');
-matrixChange(tomb, 6, 7, '/');
-matrixChange(tomb, 5, 6, 'L');
-matrixChange(tomb, 5, 4, '/');
-matrixChange(tomb, 4, 5, '_');
-matrixChange(tomb, 4, 4, ' ');
-matrixChange(tomb, 3, 5, '|');
-matrixChange(tomb, 2, 4, '*');
-matrixChange(tomb, 2, 3, '*');
-matrixChange(tomb, 1, 4, '*');
-matrixChange(tomb, 1, 3, '*');
-print(tomb);
+var array = matrixGenerate(10, 10, ' ');
+matrixChange(array, 9, 5, '_');
+matrixChange(array, 9, 4, 'L');
+matrixChange(array, 9, 6, '/');
+matrixChange(array, 8, 3, 'L');
+matrixChange(array, 8, 7, '/');
+matrixChange(array, 7, 2, '|');
+matrixChange(array, 7, 8, '|');
+matrixChange(array, 6, 3, 'L');
+matrixChange(array, 6, 7, '/');
+matrixChange(array, 5, 6, 'L');
+matrixChange(array, 5, 4, '/');
+matrixChange(array, 4, 5, '_');
+matrixChange(array, 4, 4, ' ');
+matrixChange(array, 3, 5, '|');
+matrixChange(array, 2, 4, '*');
+matrixChange(array, 2, 3, '*');
+matrixChange(array, 1, 4, '*');
+matrixChange(array, 1, 3, '*');
+print(array);
