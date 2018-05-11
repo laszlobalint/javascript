@@ -9,7 +9,7 @@ function prime (number) {
     return 'prime';
   }
   return 'notPrime';
-}
+}0
 
 for (var j = 1; j <= 100; j++) {
   if (prime(j) === 'prime') {
