@@ -1,5 +1,5 @@
 // Boolean
-let isDone: boolean = false;
+let isDone: boolean = false; 
 
 // Number
 let decimal: number = 6;
